@@ -1,0 +1,42 @@
+<ion-content>
+  <div class="container">
+    <div class="left-section">
+        <div>
+            <div class="logo">swiftCart</div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Shop fast,<br>Shop smart</h1>
+        </div>
+    </div>
+
+    <div class="right-section">
+        <div class="form-container">
+            <div class="form-header">
+                <h2 class="form-title">Create an account</h2>
+                <p class="form-subtitle">Already have an account? <a href>Log in</a></p>
+            </div>
+
+            <form [formGroup]="signupForm" (submit)="onSubmit()">
+                <div class="form-group">
+                    <input type="text" class="input-field" placeholder="Full Name" formControlName="name" >
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="input-field" placeholder="Email" formControlName="email"  >
+                </div>
+
+                <div class="form-group">
+                        <input type="password" class="input-field" placeholder="Enter your password" formControlName="password" >
+                </div>
+
+                <div class="checkbox-group">
+                    <div class="checkbox"><ion-checkbox></ion-checkbox></div>
+                    <ion-label class="checkbox-label">I agree to the <a href="#">Terms & Conditions</a></ion-label>
+                </div>
+                <button type="submit" class="create-btn">Create account</button>
+            </form>
+        </div>
+    </div>
+</div>
+</ion-content>
